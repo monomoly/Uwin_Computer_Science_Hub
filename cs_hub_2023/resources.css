@@ -1,0 +1,109 @@
+nav {
+    background-color: #2c3e50;
+    text-align: center;
+    margin-top: 2%;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #1a252f;
+}
+
+nav a:visited {
+    color: #ecf0f1; /* Keep the color the same for visited pages */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body a:hover{
+background-color: #669dd19d;
+}
+
+header {
+    background-color: #d49610a8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+}
+p{
+    text-align: center;
+}
+
+.label{
+    background-color: rgba(74, 107, 214, 0.466);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-section h2 {
+    color: #3498db;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+a {
+    color: rgb(34, 69, 90);
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8d54c2; /* Change the color for visited links */
+}
+
+label{
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 6%;
+}
+
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 6%;
+}
+
+#file{
+    margin-left:38%;
+    margin-bottom: 8%;
+}

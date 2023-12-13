@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources.css">
+    <title>Resources</title>
+</head>
+<body>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="resources.html">Resources</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <header>
+        <h1>Resources</h1>
+    </header>
+    <div id="images">
+        <img class="logo" src="youtube.jpeg" alt="Youtube Logo" style="width: 15%;; margin-left:24%; margin-right: 3%;">
+        <img class="logo" src="w3.jpeg" alt="W3 Schools Logo" style="width: 15%; margin-right: 3%; margin-top:2%">
+        <img class="logo" src="autocode.jpeg" alt="autocode Logo" style="width: 15%; margin-right: 3%; ">
+    </div>
+    <section class="resource-section">
+        <div class= "label">
+        <h2>YouTube Videos</h2>
+    </div>
+        <ul>
+            <li><a href="https://youtu.be/-uleG_Vecis?si=ORvh0uUEKDYl0m7K">Intro to CS: Useful Beginners Knowledge</a></li>
+            <li><a href="https://youtu.be/QZwneRb-zqA?si=7jZD6JqXyEcfYjo6">Exploring How Computers Work</a></li>
+            <li><a href="https://youtu.be/I0-izyq6q5s?si=1QxHK5XsNEeH1SHb">How Do Computers Remember?</a></li>
+            <li><a href="https://youtu.be/1I1vxu5qIUM?si=NnXrWjhaIoBa3cjv">How Does Bluetooth Work?</a></li>
+            <li><a href="https://youtu.be/SzJ46YA_RaA?si=almO1QtyPKJ7Apka">Map of Computer Science</a></li>
+            <li><a href="https://youtu.be/N775KsWQVkw?si=-Z4pvBCWh_bWAby9">How to Program – Getting Started</a></li>
+            <li><a href="https://youtu.be/LtoBGQPuu1c?si=fuj8bF3LFHs96-Ne">Computer Science Terminology</a></li>
+        </ul>
+    </section>
+
+    <section class="resource-section">
+        <div class= "label">
+        <h2>Articles</h2>
+        </div>
+        <ul>
+            <li><a href="https://www.afternerd.com/blog/learn-computer-science/">How to Learn Computer Science</a></li>
+            <li><a href="https://www.artificialintelligence-news.com/">Artificial Intelligence News</a></li>
+            <li><a href="https://news.mit.edu/topic/computers">MIT Computer Science News</a></li>
+        </ul>
+    </section>
+
+    <section class="resource-section">
+        <div class= "label">
+        <h2>Interactive Coding Websites</h2>
+        </div>
+        <ul>
+            <li><a href="http://programarcadegames.com/index.php?lang=en">Program Arcade</a></li>
+            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+            <li><a href="https://autocode.com/">AutoCode</a></li>
+        </ul>
+    </section>
+
+    <form action="upload_file.php" method="post" enctype="multipart/form-data">
+        <label for="file"> <p>Upload Course Material (PDF, slides, etc.):</p></label>
+        <input type="file" name="file" id="file">
+        <input type="submit" value="Upload">
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fileInput = document.getElementById('file');
+            const uploadForm = document.querySelector('form');
+        
+            uploadForm.addEventListener('submit', function(event) {
+                const fileName = fileInput.value.split('\\').pop(); // Extracts the file name from the file path
+                const confirmation = confirm(`Do you want to upload the file: ${fileName}?`);
+        
+                if (!confirmation) {
+                    event.preventDefault(); // Prevent the form submission if the user cancels the upload
+                }
+            });
+        });
+    </script>
+
+</body>
+<footer>
+    Mona Moussa - 110103687
+ </footer>
+
+</html>
